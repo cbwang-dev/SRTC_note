@@ -1,0 +1,1 @@
+similar to fail silent but allows other systems to detect its failure state.

@@ -1,0 +1,76 @@
+
+- [[IO interactions with devices]]
+	- 2 class computer architectures w.r.t peripherals
+	- 2 methods for accessing peripherals
+		- two sets of instructions, one for each bus
+		- [[memory mapped IO]]
+	- 2 methods for communicating peripherals
+		- directly from application
+		- via interface of OS (system calls)
+	- interaction with device
+		- general
+			- device driver -> device: commands, data (writing)
+			- device -> device driver: data (reading), end info, status info
+		- data
+			- through data register of device
+			- [[direct memory access]]
+		- commands
+			-  via command-register of device or controller
+			-  via [[channel program]]
+		- end info: when commands are finished
+			- polling
+			- [[interrupt-driven mechanism for hardware IO]]
+		- status info: how the command has done its job
+			-  via status-register of device or controller
+	- two models for device drivers
+		- [[1 level device driver]]
+		- [[2 level device driver]]
+
+
+- language support
+	- general
+		- support
+			- modularity and encapsulation
+			- access to registers from high-level language
+			- readable bit manipulations
+			- abstract model for working with a device
+		- representation of interrupts in high-level languages
+			- procedure call
+			- sporadic process
+			- asynchronous events
+			- synchronization on shared data
+			- message
+	- Ada
+		- provides attribute to access registers
+	- C
+		- provides attribute to access registers (compiler-specific way)
+	- RTSJ :memory management (to support memory management in a way that does not interfere with the ability of real-time code to exhibit deterministic behavior)
+		- Java itself has no direct access to hardware because no pointers & no [[Java byte code]] for access to physical memory
+		- why shared heap is non-deterministic
+			- heap allows non real-time threads to interfere with real-time threads, leading to priority inversion (see [[Chapter 11 Scheduling (important)]]) and non-determinism
+		- 4 [[types of memory area types in RTS Java]], [[Java garbage collector]] can only manipulate heap memory
+			- when heap is shared and not manipulated, it allows non-real-time threads to interfere with real-time threads, leading to [[priority inversion]] and non-determinism. 
+- writing device drivers (in Ada, C, RTSJ)
+	- device driver is part of OS that controls a particular peripheral device
+
+
+- device driver in Unix and Linux
+	- naming
+		- UNIX: naming based on file system
+		- [[special files in UNIX]]
+		- [[major number and minor number in UNIX]]
+	- IO system calls
+		- all IO is done via system call
+		- road to device driver-routine goes through file system
+		- access to device driver via driver tables
+	- device driver table (mentioned in [[special files in UNIX]])
+	- different routines of a device driver 
+		- initialization
+		- open/close
+		- read/write
+		- interrupt
+		- IO control (not in the above standard routines)
+	- how device driver is added to the system
+		- create a special file
+		- write the necessary routines and give it to kernel
+		- execute system with new device driver

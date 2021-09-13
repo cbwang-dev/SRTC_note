@@ -1,0 +1,22 @@
+ 4 phases
+- Error detection
+	- Detection by the environment (processor, [[run time system]], OS)
+	- Detection by the application: detection via
+		- replication (N versions)
+		- time measurements (can be noticed by scheduler, see [[Chapter 13 Tolerating timing faults]])
+		- reverse calculations: `sqrt()`
+		- coding check: `checksum`
+		- reasonable check: value range
+		- dynamic reasonable check: output makes no large jumps
+		- structural check of data structures: linked list
+- Damage confinement and assessment: time may have elapsed between the occurrence of a fault and the detection of the error which is following it. Two structural approaches
+	- modular decomposition (static)
+		- System divided into components, components interact through well-defined interfaces. 
+		- Internal data of modules are hidden and protected.
+		- limit the error propagation
+	- [[atomic action]] (dynamic)
+- Error recovery
+	-  [[forward recovery]] and [[backward recovery]]
+- treatment of error: Solving of the problem so it does not re-occur. 2 phases:
+	- precise fault detection
+	- recovery from error

@@ -1,0 +1,1 @@
+Fail safe: system stops operation but maintains integrity. eg. flap wings of plane should be put symmetrically when problem occurs

@@ -1,0 +1,16 @@
+- communication mechanisms
+	- shared memory
+		- thread share data
+		- communication without OS
+		- [[Chapter 05 Synchronization and Communication with Shared Variables]]
+	- messages (asynchronous events)
+		- no shared memory
+		- OS calls to send/receive messages
+		- [[Chapter 06 Synchronization and communication using messages]]
+	- sending events 
+		- similar to interrupts, has relation to exceptions as well
+		- OS call for sending event and for informing OS of handler (signal) (follows the [[resumption model]])
+		- [[Chapter 07 Atomic actions, concurrent tasks and reliability]]
+- concurrent programming example (robot arm)
+	- [[concurrent execution in Java]]
+	- [[concurrent execution in C POSIX]]

@@ -1,0 +1,1 @@
+action provoked by time (door close at 8 pm)

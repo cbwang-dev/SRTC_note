@@ -1,0 +1,26 @@
+- RT tasks
+	- Ada and C/POSIX have no syntactic difference between RT and ordinary tasks
+	- RT Java offers a difference by `RealtimeThread extends java.lang.Thread`
+		- managed by a scheduler
+		- can use other memory instead of heap (see [[Chapter 14 Low Level Programming]])
+	- RT Java have attributes [[real time threads in RTSJ]]
+		- `ReleaseParameters` 
+			- contain info like deadline, periodic/sporadic, etc. 
+			- releases have an associated cost, often the [[worst case execution time]] of the RT thread
+		- `SchedulingParameters`
+		- `MemoryParameters` (see [[Chapter 14 Low Level Programming]])
+		- `ProcessingGroupParameters` to treat a group of tasks as a whole (eg. same deadline)
+- programming periodic activities
+	- Ada and C/POSIX: nothing specific, can be done through other mechanisms
+		- Ada: via `delay until`
+		- C/POSIX: via `sleep()` or `clock_nanosleep()`
+	- RT Java offers specific things:  `PeriodicParameters extends ReleaseParameters`
+		- 2 extra parameters: period and starting time
+		- with routine `WaitForNextPeriod` to be used at the end of a loop
+- programming aperiodic and [[sporadic]] activities
+	- Ada and C/POSIX: nothing specific
+	- RT Java offers specific things: possibilities to limit the queue of waiting aperiodic tasks
+- event handlers (only principles)
+- control jitter (only principles)
+
+---

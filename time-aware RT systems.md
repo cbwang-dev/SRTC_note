@@ -1,0 +1,1 @@
+refers to world clock: doors close automatically at 18 o'clock.

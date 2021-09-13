@@ -1,0 +1,16 @@
+- communication using messages is different from communication with shared variables
+	- no shared memory
+	- OS calls to send/receive messages
+- message systems vary according to
+	- [[synchronization model]]
+	- [[process naming]]
+	- structure of message
+- different implementations regarding to different languages
+	- Ada
+		- [[Rendez-vous in Ada]] (Rendez-vous means appointment)
+		- selective wait
+	- C/POSIX
+		- [[message model in POSIX]]
+	- Java
+		- [[remote procedure call]]: simulate calls as if they happen locally on same OS. 
+			- in Java, RPC is implemented as [[remote method invocation]]

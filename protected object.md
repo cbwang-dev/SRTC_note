@@ -1,0 +1,1 @@
+Protected objects encapsulate data and provide access to that data by means of protected operations, which may be subprograms or protected entries. Using protected objects ensures that data is not corrupted by race conditions or other simultaneous access. Protected objects can be implemented using Ada tasks.

@@ -1,0 +1,24 @@
+- problem statement:  
+	- producer-consumer problem 
+	- use shared circular buffer
+- in need for conditional synchronization
+	- consumer should wait when buffer is empty
+	- producer should wait when buffer is full
+- [[critical section]] and conditional synchronization
+	- in the producer-consumer problem, there might be a [[data race]], so we need [[critical section]]
+	- dealing with [[critical section]] and conditional synchronization: 6 solutions
+		- solution 1: busy waiting, suspend/resume: we pass this 
+		- solution 2: [[semaphore]]
+			- used in POSIX
+			- [[binary semaphores]] and [[quantity semaphores]]
+		- solution 3: conditional [[critical section]]
+			- a code segment with guarantee for execution with [[mutual exclusion]] and with the possibility of conditional synchronization
+			- how
+				- group of variables protected in code segments that get a name (in Ada, `region`)
+				- guard for conditional synchronization
+			-  cons
+				-  the code-segments can be spread in an unstructured manner over the program
+				-  a process that waits to enter a region must, every time there is a different process, be made active to test the guard
+		- solution 4: [[monitor in C POSIX]]  [[condition variables]]
+		- solution 5: synchronized classes in Java 
+		- solution 6: [[protected objects in Ada]]

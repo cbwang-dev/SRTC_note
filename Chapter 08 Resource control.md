@@ -1,0 +1,1 @@
+[[deadlock]] is the only part discussed in this chapter. 

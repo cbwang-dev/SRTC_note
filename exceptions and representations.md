@@ -1,0 +1,9 @@
+- detection by environment and synchronous notification
+	- out of range in an array (in run time)
+	- division by 0 (in processor)
+- detection by application and synchronous notification
+	- does not meet an assertion written in application
+- detection by environment and asynchronous notification
+	- power failure of measuring device
+- detection by application and asynchronous notification
+	- process A notice process B stops responding

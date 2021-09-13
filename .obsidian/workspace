@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "0ef53af46151d439",
+    "type": "split",
+    "children": [
+      {
+        "id": "954724e79c27994e",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "design methodology for RT system.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5a3203d22c634e0f",
+    "type": "split",
+    "children": [
+      {
+        "id": "66c470f62bf9ae29",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0b8a0cfac15c7b7e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "de5a803a5a14e098",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "bottom",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 152
+  },
+  "right": {
+    "id": "0e056d13fd212e7e",
+    "type": "split",
+    "children": [
+      {
+        "id": "ec5105ee880d85ef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "db9e8746749c84c8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "design methodology for RT system.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "954724e79c27994e",
+  "lastOpenFiles": [
+    "design methodology for RT system.md",
+    "Chapter 06 Synchronization and communication using messages.md",
+    "remote procedure call.md",
+    "images/termination.png",
+    "images/simple.png",
+    "images/run_time_system.png",
+    "images/rpc.png",
+    "images/resumption.png",
+    "images/race.png",
+    "images/preempt.png"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "spellcheck": true,
+  "readableLineLength": false,
+  "foldHeading": true,
+  "tabSize": 4,
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "spellcheckDictionary": [
+    "Rendez",
+    "vous",
+    "livelock",
+    "aperiodic",
+    "jitter",
+    "eg",
+    "schedulability",
+    "modularity",
+    "checkpointing"
+  ],
+  "strictLineBreaks": true,
+  "autoPairMarkdown": true,
+  "showLineNumber": false
+}

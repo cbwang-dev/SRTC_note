@@ -1,0 +1,1 @@
+Fail soft (=Graceful degradation): system continues to operate with degradation of functionality or performance. eg. air traffic control

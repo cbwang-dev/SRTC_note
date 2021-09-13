@@ -1,0 +1,3 @@
+- no current language offer language support for atomic action. 
+- The semantics of atomic action can be achieved with the help of 
+	- monitors/protected objects/synchronized

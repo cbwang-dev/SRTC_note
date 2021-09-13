@@ -1,0 +1,6 @@
+- feature: all or nothing (if an error occurs, the initial state is automatically restored)
+- this can be supported by the system    
+	- programmer has no control on this support (e.g. recovery procedures can not be specified)
+	- is a form of backward recovery, does not allow for forward recovery
+- commonly used term in operating systems and databases
+- sometimes called recoverable actions (or even atomic actions)

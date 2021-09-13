@@ -1,0 +1,9 @@
+- main characteristics
+	- [[synchronization model]]: asynchronous
+	- [[process naming]]: indirect naming, symmetrical naming
+	- structure of message: free, comparable to parameters
+- terminology
+	- message is sent and received from message queue
+	- allows many readers/writers
+	- at creation one can specify: length of queue, maximum size of an individual message, protection
+	- normal case a process will wait if the message queue is full (to send) or empty (to receive)

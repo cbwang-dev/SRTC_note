@@ -1,0 +1,9 @@
+- heap memory (the only memory area for [[Java garbage collector]])
+- scoped memory (object lifetime of the lexical scope, not for [[Java garbage collector]])
+	- allocated objects have a limited lifetime
+		- reference count per scoped memory area, decrease per termination
+		- when reference count reaches 0: all finalizers are executed, all objects (memory) are reclaimable
+- immortal memory (object lifetime of the application)
+	- freed only when program terminates
+- physical memory (may be immortal or scoped, map to specific physical memory)
+	- physical memory access: placing objects in specific types of memory like RAM, [[direct memory access]], [[memory mapped IO]]

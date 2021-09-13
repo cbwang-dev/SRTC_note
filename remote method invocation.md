@@ -1,0 +1,4 @@
+- no language extension (no keywords, no new constructions)
+- needs environment that is fully adapted to Java
+- is supported by [[Java virtual machine]]
+- stubs are automatically generated

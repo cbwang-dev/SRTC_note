@@ -1,0 +1,26 @@
+- introduction
+	- why we need scheduling? determine the order of execution
+	- [[pre-emptive scheduling]]
+	- in RT systems, often static scheduling (because tasks and deadlines are known in advance)
+	- [[simple process model]]
+- task-based scheduling instead of [[simple process model]] 
+	- characteristics
+		- processes in following states
+			- ready to execute
+			- blocked on time event
+			- blocked on other event
+		- each task has priority (determined by temporal requirements not importance)
+		- preemptive: process A executes; and process B with higher priority, then process B becomes runnable; then A is stopped for the benefit of B. Check [[pre-emptive scheduling]]. 
+	- approaches
+		- fixed-priority scheduling (FPS): each task gets a static priority (determined by temporal requirements not importance)
+			- [[rate monotonic priority assignment]]  (RMPA): most important example of this
+				- [[utilization-based scheduling test]] for FPS: $\sum_{i=1}^N(\frac{C_i}{T_i})<N(2^{N-1}-1)$
+				- [[response time analysis for FPS]]
+			- [[deadline monotonic priority ordering]]
+		- [[earliest deadline first]]
+		- value-based scheduling (skip)
+
+[[priority inversion]]
+- possible solution: 
+	- [[priority inheritance]]
+	- [[priority ceiling protocols]]

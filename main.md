@@ -1,0 +1,32 @@
+- Two broad questions
+	- [[general question 1]]
+	- [[general question 2]]
+- Code snippets
+	- [[code.A.handbook.73]]: exception propagation in Ada
+	- [[code.B.handbook.76]]
+	- [[code.C.handbook.83]]: full and empty stack exception with java
+	- [[code.D.handbook.107]]: concurrent execution in Ada
+	- [[code.F.handbook.119]]: robot arm, 3 threads in C/POSIX
+	- [[code.I.handbook.127]]
+	- [[code.J.handbook.151]]: semaphore in Ada (producer-consumer system)
+	- [[code.K]]
+	- [[code.M]]
+	- [[code.S.handbook.175]]: readers-writers issue in Java
+	- [[code.Xb.handbook.209]]: robot arm in C/POSIX
+	- [[code.Z.handbook.235]]: atomic action in Ada
+- Terminology combined with the structure of the slides. [[special attention]]
+	- [[Chapter 01 introduction]]
+	- [[Chapter 02 Reliability and Fault Tolerance]]
+	- [[Chapter 03 Exceptions and Exception Handling]]
+	- [[Chapter 04 Concurrent Programming]]
+	- [[Chapter 05 Synchronization and Communication with Shared Variables]]
+	- [[Chapter 06 Synchronization and communication using messages]]
+	- [[Chapter 07 Atomic actions, concurrent tasks and reliability]]
+	- [[Chapter 08 Resource control]]
+	- [[Chapter 09 Real-time facilities]]
+	- [[Chapter 10 Programming real-time abstractions]]
+	- [[Chapter 11 Scheduling (important)]]
+	- [[Chapter 12 Programming Schedulable Systems]]
+	- [[Chapter 13 Tolerating timing faults]]
+	- [[Chapter 14 Low Level Programming]]
+

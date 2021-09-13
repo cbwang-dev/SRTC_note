@@ -1,0 +1,2 @@
+-   major number: numerical internal identifier for a device driver (this refers to the software)
+-   minor number: If a DD serves multiple devices: have different minor number
